@@ -26,67 +26,67 @@
 	        $text = $event->getText();
 	        switch ($text) {
 	        	case 'ally1':
-	        		$img_file = "ally-1-en.jpg"
+	        		$img_file = "ally-1-en.jpg";
 	        		break;
 	        	
 	        	case 'ally2':
-	        		$img_file = "ally-2-en.jpg"
+	        		$img_file = "ally-2-en.jpg";
 	        		break;
 	        	
 	        	case 'ally3':
-	        		$img_file = "ally-3-en.jpg"
+	        		$img_file = "ally-3-en.jpg";
 	        		break;
 	        	
 	        	case 'ally4':
-	        		$img_file = "ally-4-en.jpg"
+	        		$img_file = "ally-4-en.jpg";
 	        		break;
 	        	
 	        	case 'ally5':
-	        		$img_file = "ally-5-en.jpg"
+	        		$img_file = "ally-5-en.jpg";
 	        		break;
 	        	
 	        	case 'ally6':
-	        		$img_file = "ally-6-en.jpg"
+	        		$img_file = "ally-6-en.jpg";
 	        		break;
 	        	
 	        	case 'axis1':
-	        		$img_file = "axis-1-en.jpg"
+	        		$img_file = "axis-1-en.jpg";
 	        		break;
 	        	
 	        	case 'axis2':
-	        		$img_file = "axis-2-en.jpg"
+	        		$img_file = "axis-2-en.jpg";
 	        		break;
 	        	
 	        	case 'axis3':
-	        		$img_file = "axis-3-en.jpg"
+	        		$img_file = "axis-3-en.jpg";
 	        		break;
 	        	
 	        	case 'axis4':
-	        		$img_file = "axis-4-en.jpg"
+	        		$img_file = "axis-4-en.jpg";
 	        		break;
 	        	
 	        	case 'leader':
-	        		$img_file = "leader-en.jpg"
+	        		$img_file = "leader-en.jpg";
 	        		break;
 	        	
 	        	case 'mission':
-	        		$img_file = "mission-en.jpg"
+	        		$img_file = "mission-en.jpg";
 	        		break;
 	        	
 	        	case 'fail':
-	        		$img_file = "fail-en.jpg"
+	        		$img_file = "fail-en.jpg";
 	        		break;
 	        	
 	        	case 'succeed':
-	        		$img_file = "succeed-en.jpg"
+	        		$img_file = "succeed-en.jpg";
 	        		break;
 	        	
 	        	case 'support':
-	        		$img_file = "support-en.jpg"
+	        		$img_file = "support-en.jpg";
 	        		break;
 	        	
 	        	case 'reject':
-	        		$img_file = "reject-en.jpg"
+	        		$img_file = "reject-en.jpg";
 	        		break;
 	        	
 	        	default:
