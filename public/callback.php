@@ -17,7 +17,7 @@
 	$image = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder("/../images/ally-1-en.jpg","/../images/ally-1-en.jpg");
 
 	foreach ($events as $event) {
-		file_put_contents("php://stderr", "User ID : ".$event->getUserId());
+		file_put_contents("php://stderr", "Test Gambar | User ID : ".$event->getUserId());
 
 	    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 	        $reply_token = $event->getReplyToken();
