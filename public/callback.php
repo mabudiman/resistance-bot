@@ -17,7 +17,10 @@
 	$image = "failed";
 
 	try {
-		$image = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder("/../images/ally-1-en.jpg","/../images/ally-1-en.jpg");
+		$image = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder(
+			"https://resistance-bot-line-indo.herokuapp.com/images/ally-1-en.jpg",
+			"https://resistance-bot-line-indo.herokuapp.com/images/ally-1-en.jpg"
+			);
 	} catch (Exception $e) {
 	    file_put_contents("php://stderr", "Error new imagebuilder");
 	}
@@ -29,6 +32,7 @@
 	        $reply_token = $event->getReplyToken();
 	        $text = $event->getText();
 	        $bot->replyMessage($reply_token, $image);
+	        // $bot->replyMessage($reply_token, "test");
 	    }
 	}
 		echo "OK";
