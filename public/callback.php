@@ -32,7 +32,7 @@
 	        $reply_token = $event->getReplyToken();
 	        $text = $event->getText();
 	        // $bot->replyMessage($reply_token, $image);
-	        $bot->replyMessage($reply_token, "test");
+	        $bot->replyText($reply_token, "test");
 	    }
 	}
 		echo "OK";
