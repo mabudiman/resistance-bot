@@ -1,7 +1,3 @@
-<?php 
-	require "public/callback.php";
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
