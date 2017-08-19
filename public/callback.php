@@ -14,25 +14,25 @@
 
 	$events = $bot->parseEventRequest($body, $signature);
 
-	// $image = "failed";
+	$image = "failed";
 
-	// try {
-	// 	$image = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder(
-	// 		"https://resistance-bot-line-indo.herokuapp.com/images/ally-1-en.jpg",
-	// 		"https://resistance-bot-line-indo.herokuapp.com/images/ally-1-en.jpg"
-	// 		);
-	// } catch (Exception $e) {
-	//     file_put_contents("php://stderr", "Error new imagebuilder");
-	// }
+	try {
+		$image = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder(
+			"https://resistance-bot-line-indo.herokuapp.com/images/ally-1-en.jpg",
+			"https://resistance-bot-line-indo.herokuapp.com/images/ally-1-en.jpg"
+			);
+	} catch (Exception $e) {
+	    file_put_contents("php://stderr", "Error new imagebuilder");
+	}
 
 	foreach ($events as $event) {
-		// file_put_contents("php://stderr", "Test Gambar | User ID : ".$event->getUserId());
+		file_put_contents("php://stderr", "Test Gambar | User ID : ".$event->getUserId());
 
 	    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 	        $reply_token = $event->getReplyToken();
 	        $text = $event->getText();
-	        // $bot->replyMessage($reply_token, $image);
-	        $bot->replyText($reply_token, "test");
+	        $bot->replyMessage($reply_token, $image);
+	        // $bot->replyText($reply_token, "test");
 	    }
 	}
 		echo "OK";
