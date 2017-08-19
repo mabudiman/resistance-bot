@@ -14,13 +14,15 @@
 
 	$events = $bot->parseEventRequest($body, $signature);
 
+	$image = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder("/../images/ally-1-en.jpg","/../images/ally-1-en.jpg");
+
 	foreach ($events as $event) {
 		file_put_contents("php://stderr", "User ID : ".$event->getUserId());
 
 	    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 	        $reply_token = $event->getReplyToken();
 	        $text = $event->getText();
-	        $bot->replyText($reply_token, "YO! ".$text." lol");
+	        $bot->replyMessage($reply_token, $image);
 	    }
 	}
 		echo "OK";
