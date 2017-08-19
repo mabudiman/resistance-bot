@@ -1,6 +1,6 @@
 <?php
 	// header( 'Location: /public/callback.php' ) ;
-	require "/public/callback.php";
+	require "/public/test.php";
 ?>
 
 <!-- <!DOCTYPE html>
