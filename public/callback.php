@@ -15,7 +15,7 @@
 	$events = $bot->parseEventRequest($body, $signature);
 
 	foreach ($events as $event) {
-		file_put_contents("php://stderr", "fuck");
+		file_put_contents("php://stderr", var_dump($event));
 
 	    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 	        $reply_token = $event->getReplyToken();
