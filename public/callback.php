@@ -15,11 +15,12 @@
 	$events = $bot->parseEventRequest($body, $signature);
 
 	foreach ($events as $event) {
+		file_put_contents("php://stderr", $event);
+
 	    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 	        $reply_token = $event->getReplyToken();
 	        $text = $event->getText();
 	        $bot->replyText($reply_token, "YO! ".$text." lol");
 	    }
 	}
-	file_put_contents("php://stderr", "hello, this is a test!\n");
-	echo "OK";
+		echo "OK";
