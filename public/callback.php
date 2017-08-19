@@ -23,7 +23,7 @@
 	}
 
 	foreach ($events as $event) {
-		file_put_contents("php://stderr", "Test Gambar | User ID : ".$event->getUserId());
+		file_put_contents("php://stderr", "Test Gambar | image : ".$image);
 
 	    if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 	        $reply_token = $event->getReplyToken();
